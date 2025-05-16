@@ -1,0 +1,23 @@
+<script>
+    document.write("Q60) WAP to print Square, Cube and Square Root of all numbers from 1 to N");
+    document.write("<br>");
+    let n = parseInt(prompt("Enter a number "));
+    let n1 = parseInt(prompt("Enter a number "));
+    let s;
+    let c;
+
+    for (let i = n; i <= n1; i++) {
+       
+        
+        let sqrt = Math.sqrt(i).toFixed(2);
+        document.write(i + "<br>");
+        document.write("Square : " + (i * i) + " ");
+        document.write("Cube : " + (i * i * i) + " ");
+        document.write("Square Root " + i + " : " + sqrt);
+        document.write("<br>");
+        
+    }
+
+
+
+</script>

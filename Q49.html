@@ -1,0 +1,17 @@
+<script>
+    document.write("Q49) WAP to check whether entered number is perfect or not<br>");
+    let n = parseInt(prompt("Enter number"));
+    let n1 = parseInt(prompt("Enter number"));
+    
+    for (let j = n; j < n1; j++) {
+        let sum = 0;
+    for (let i = 1; i < j; i++) {
+        if (j % i == 0) {
+            sum += i;
+        }  
+}
+if (sum == j) {
+        document.write(j + " " );
+}
+    }
+</script>

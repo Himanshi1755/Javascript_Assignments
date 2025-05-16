@@ -1,0 +1,16 @@
+<script>
+
+let n = parseInt(prompt("Enter a number"));
+let n1 = parseInt(prompt("Enter a number"));
+
+
+for(let j = n; j<=n1; j++){
+    document.writeln("Factors of "+ j + " : ");
+        for(let i = 2; i<=j; i++){
+            if(j%i==0){
+            document.write( i + " , ");
+        }
+    }
+    document.write("<br>");
+}
+    </script>

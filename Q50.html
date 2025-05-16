@@ -1,0 +1,21 @@
+<script>
+    document.writeln("Q50) WAP to find out all the palindrome numbers between two entered numbers");  
+      document.write("<br>");
+      let num1 = parseInt(prompt("Enter a number"));
+      let num2 = parseInt(prompt("Enter number"));
+      let lastDigit =0;
+      let sum ;
+      let t;
+
+for(let i=num1; i<num2; i++){
+    t = i ;
+    sum=0;
+      while(t!=0){
+        lastDigit = t%10;
+        sum = sum * 10 + lastDigit;
+        t=t/10 | 0;   
+      }
+      if(sum===i)
+      document.write(i + " is palindrome number. <br>");
+    } 
+</script>

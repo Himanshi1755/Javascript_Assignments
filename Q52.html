@@ -1,0 +1,43 @@
+<script>
+    document.writeln("Q52) WAP to find out all the Armstrong numbers between two entered numbers");
+    document.write("<br>");
+    let num = parseInt(prompt("Enter a number"));
+    let num1 = parseInt(prompt("Enter a number"));
+    let lastDigit = 0;
+    let sum;
+    let temp;
+    let t;
+    let count;
+
+
+
+    for (let i = num; i < num1; i++) {
+        temp = i;
+        t = i;
+        count = 0;
+        sum = 0;
+
+
+        while (temp != 0) {
+            temp = temp / 10 | 0;
+            count++;
+        }
+
+        temp = t;
+
+        while (temp != 0) {
+            lastDigit = temp % 10;
+
+            let p = 1;
+            for (let j = 0; j < count; j++) {
+                p *= lastDigit;
+            }
+
+            sum += p;
+            temp = (temp / 10) | 0;
+        }
+
+        if (sum === t && count > 1)
+            document.write(t + " is armstrong number.<br>");
+    }
+</script>

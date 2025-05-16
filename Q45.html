@@ -1,0 +1,32 @@
+<script>
+    document.write("Q45) ");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));// n is bigger than n1
+
+    let original = n;
+    let sum = 0;
+        let lg;
+    let t = n;
+
+
+
+    // let fg = n;
+    // while (fg >= 10) {
+    //     fg = fg / 10 | 0;
+    // }
+
+
+    let count = 0;
+    while (n > 0) {
+        lg = n%10;
+        sum = sum +lg;
+        n = n / 10 | 0;
+
+    }
+
+
+
+    document.write("Reverse of 1st digit and last digit :  " + sum);
+
+</script>

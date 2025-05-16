@@ -1,0 +1,26 @@
+<script>
+    document.write("Q43) ");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));// n is bigger than n1
+
+    let original = n;
+    let power = 1;
+    let ans = 0;
+
+
+    while (n != 0) {
+        let lg = n % 10;
+        if (lg == 1) {
+            ans = ans + power;
+            
+
+        }
+        power *= 2;
+        n = n / 10 | 0;
+    }
+    document.write("Binary to decimal of " + original + " : " + ans);
+
+</script>
+
+<!-- let bit = n & 1; -->

@@ -1,0 +1,27 @@
+<script>
+    document.write("40) WAP to count no. Of even and odd digits in a number");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));
+    let evenC = 0;
+    let oddC = 0;
+    let lg;
+
+    while(n!=0){
+        lg = n%10;
+
+        if(lg%2==0){
+            evenC++;
+        }
+        else{
+            oddC++;
+        }
+        n = n/10 | 0;
+
+    }
+
+ document.write("Even digits: " + evenC + "<br>");
+    document.write("Odd digits: " + oddC);
+
+   
+</script>

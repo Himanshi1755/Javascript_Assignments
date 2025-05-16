@@ -1,0 +1,18 @@
+<script>
+    document.write("Q56) WAP to print factorial of all the numbers between two entered numbers.");
+    document.write("<br>");
+    let n = parseInt(prompt("Enter a number "));
+    let n1 = parseInt(prompt("Enter a number "));
+let fact ;
+
+    for (let i = n; i <=n1; i++) {
+        fact = 1;
+        for (let j = 1; j <= i; j++) {
+            fact = fact * j;
+        }
+        document.writeln("Factorial of " + i + " : " + fact);
+        document.write("<br>");
+
+    }
+
+</script>

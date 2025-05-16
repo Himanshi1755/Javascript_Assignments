@@ -1,0 +1,38 @@
+<script>
+    document.write("Q53) WAP to print all the strong numbers between two entered numbers.");
+    document.write("<br>");
+    let n = parseInt(prompt("Enter a number "));
+    let n1 = parseInt(prompt("Enter a number "));
+
+    let lg;
+    let fact ;
+    let t;
+    
+   let original;
+
+    for(let i=n; i<n1; i++){
+        t = i;
+        let sum = 0;
+        let original=i;
+    while (t != 0) {
+        lg = t % 10;
+        fact =1;
+
+        for (let i = lg; i >0; i--) {
+            fact = fact * i;
+        }
+        
+        sum += fact;
+       t = (t / 10) | 0;
+      
+    }
+    if (sum === original)
+    document.write(original + " is Strong number.");
+
+   
+    }
+
+        </script>
+
+<!-- let temp = n/10 | 0; 
+document.write(temp); -->

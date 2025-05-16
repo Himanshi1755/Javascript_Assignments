@@ -1,0 +1,15 @@
+<script>
+    document.write("Q32) A	b	C	d	E	f	G	h	…… n terms ");
+    document.write("<br>");
+    let n = parseInt(prompt("Enter a number "));
+
+    for (let i = 0; i < n; i++) {
+        if (i % 2 == 0) {
+            document.write(String.fromCharCode(96 + i + " "));
+        }
+        else {
+            document.write(String.fromCharCode(64 + i + " "));
+        }
+        document.write(" ");
+    }
+</script>

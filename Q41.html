@@ -1,0 +1,28 @@
+<script>
+    document.write("Q41) WAP to find out LCM of a number");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));// n is bigger than n1
+    let n1 = parseInt(prompt("Enter a number"));
+    let lcm ;
+  let r;
+
+//     while(true){
+// lcm = n;
+// r = n%n1;
+// if(r==0){
+//     break;
+// }
+// n = n*2;
+//     }
+// document.write("LCM : " + lcm);
+
+lcm = (n>n1)? n:n1;
+while(true){
+    if(lcm%n===0 && lcm%n1===0){
+        break;
+    }
+    lcm++;
+}
+document.write("LCM of " + n + " & " + n1 + " is: " + lcm);  
+</script>

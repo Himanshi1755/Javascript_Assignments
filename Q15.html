@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+document.write("14) WAP to print alphabets in lowercase  <br>");
+let alpha = prompt("Enter a statement ");
+let s="";
+
+for(let i=0; i<alpha.length; i++){
+  let ch = alpha[i];
+  let c = ch.charCodeAt(0);
+  if (c >= 65 && c <= 90){
+    s = s+String.fromCharCode(c+32);
+  }
+  else{
+    s+=ch;
+  }
+}
+
+
+document.write(s);
+// document.write(typeof(s));//String
+
+</script>
+</body>
+</html>

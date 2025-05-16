@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+document.write("14) WAP to print alphabets in uppercase  <br>");
+let alpha = prompt("Enter a statement ");
+let s= "";
+
+// for(let i =0; i<alpha.length; i++){
+//     // if(alpha[i] >= 'a' && alpha[i]<='z'){
+//  c = alpha[i].charCodeAt(0);
+//     // 
+//     c=c-32;
+//     s =+ String.fromCharCode(c);
+//    //}
+//     // document.write(c + " ");
+//     // document.write((alpha[i]));
+// }
+
+// for(let i =0; i<alpha.length; i++){
+//   let c = alpha[i];
+//   if (c >= 'a' && c <= 'z'){
+//     s = s+32;
+//   }
+//   else{
+//     s+=c;
+//   }
+// }
+
+for(let i=0; i<alpha.length; i++){
+  let ch = alpha[i];
+//   document.write(typeof(ch+"<br>"))//String
+// document.write(ch+"<br>");//E.g. : T R Y @ 1 2 
+
+  let c = ch.charCodeAt(0);
+  document.write(c+"<br>");
+  if (c >= 97 && c <= 122){
+    s = s+String.fromCharCode(c-32);
+  }
+  else{
+    s+=ch;
+  }
+}
+document.write(s);
+// document.write(typeof(s));//String
+
+</script>
+</body>
+</html>
+<!-- 
+GFG:-
+let charCode = 100;
+console.log(typeof charCode)
+
+//using form.CharCode
+let result = String.fromCharCode(charCode);
+console.log(typeof result); -->
