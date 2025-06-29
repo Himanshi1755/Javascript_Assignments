@@ -1,0 +1,23 @@
+<script>
+    document.writeln("Q51) WAP to reverse all the numbers between two entered numbers");  
+      document.write(" <br>");
+      let num1 = parseInt(prompt("Enter a number"));
+      let num2 = parseInt(prompt("Enter a number"));
+      let lastDigit =0;
+      let sum ;
+      let temp;
+
+for(let i=num1; i<num2; i++){
+    temp = i;
+    sum=0;
+      while(temp!=0){
+        lastDigit = temp%10;
+        sum = sum * 10 + lastDigit;
+         
+        temp=temp/10 | 0;   
+      }
+    
+      document.write("Reverse of number  " + i + " : " + sum + "<br>");
+      
+    }
+</script>

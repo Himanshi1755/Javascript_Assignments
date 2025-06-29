@@ -1,0 +1,35 @@
+<script>
+    document.write("Q46) ");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));
+
+    let sum = 0;
+    let count=0;
+let t = n;
+
+    while (t > 0) {
+        // lg = n%10;
+        // sum = sum +lg;
+        t = t / 10 | 0;
+        count++;
+    }
+    let lg = n%10;
+    
+    // for(let i=1; i<=count ;i++){
+    //     lg = n%10;
+    //     if(i==4){
+    //         sum = lg + lg1;
+    //     }
+    //     n = n / 10 | 0;
+    // }
+    let fg = n;
+    while(fg>=10){
+        fg = fg/10 |0 ;
+    }
+    sum = fg+lg;
+   
+
+    document.write("Sum of 1st digit and last digit :  " + n + " : " + sum);
+
+</script>

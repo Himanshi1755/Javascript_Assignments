@@ -1,0 +1,37 @@
+<script>
+    document.write("Q58) WAP to convert decimal number into binary number without using array.");
+    document.write("<br>");
+    let n = parseInt(prompt("Enter a number "));
+
+
+    let original = n;
+    let b = 0;
+    let p = 1;
+    let rem = 0;
+
+    while (n != 0) {
+        rem = n % 2;
+        b = b + rem * p;
+        p *= 10;
+        n = (n / 2) | 0;
+
+    }
+    document.write("Decimal to Binary of " + original + " : " + b);
+
+</script>
+
+<!-- //dry run
+
+n =10
+10%2= 0
+p=1;
+b = b +rem * p;
+   0+0*1 = 0
+   10/2 = 5 
+
+   5%2 = 1
+   p = 10;
+   0+1*10 =  -->
+
+  
+  

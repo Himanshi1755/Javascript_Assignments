@@ -1,0 +1,26 @@
+<script>
+    document.write("39) WAP to check whether entered number is strong or not");
+    document.write("<br>");
+
+    let num = parseInt(prompt("Enter a number"));
+    let lg;
+    let fact ;
+    let sum = 0;
+    let original = num;
+    while (num != 0) {
+        lg = num % 10;
+        fact =1;
+
+        for (let i = lg; i >0; i--) {
+            fact = fact * i;
+        }
+        
+        sum += fact;
+        num = (num / 10) | 0;
+
+    }
+    if (sum == original)
+        document.write(original + " is Strong number.");
+    else
+        document.write(original + " is not strong number.");
+</script>

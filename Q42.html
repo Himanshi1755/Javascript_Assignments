@@ -1,0 +1,23 @@
+<script>
+    document.write("Q41) WAP to find out HCF of a number");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));// n is bigger than n1
+    let n1 = parseInt(prompt("Enter a number"));
+    let hcf ;
+  let r;
+  
+
+    while(true){
+r = n%n1;
+n=n1;
+n1=r;
+
+if(n1==0){//break the loop
+    break;
+}
+    }
+    hcf = n;
+document.write("HCF : " + hcf);
+   
+</script>

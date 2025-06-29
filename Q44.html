@@ -1,0 +1,54 @@
+<script>
+    document.write("Q44) ");
+    document.write("<br>");
+
+    let n = parseInt(prompt("Enter a number"));// n is bigger than n1
+
+    let original = n;
+    let sum = 0;
+    let swap = 0;
+    let lg;
+    let t = n;
+
+
+
+    // let fg = n;
+    // while (fg >= 10) {
+    //     fg = fg / 10 | 0;
+    // }
+
+
+    let count = 0;
+    while (t > 0) {
+        count++;
+        t = t / 10 | 0;
+       
+    }
+
+    for (let i = 1; i <= count; i++) {
+        lg = n % 10;
+        if (i == 1) {
+            for (let j = 1; j < count; j++) {
+                lg = lg * 10;
+            }
+            swap = swap + lg;
+        }
+        else if (i == count) {
+            swap = swap + lg;
+        }
+        else {
+            for (let k = 1; k <= i - 1; k++) {
+                lg = lg * 10;
+            }
+            swap = swap + lg;
+
+        }
+        n = n / 10 | 0;
+
+    }
+
+
+
+    document.write("Reverse of 1st digit and last digit :  " + swap);
+
+</script>

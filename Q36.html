@@ -1,0 +1,24 @@
+<script>
+    //36) WAP to reverse a number
+    document.writeln("Q36) WAP to reverse a number");  
+      document.write(" <br>");
+      let num = parseInt(prompt("Enter a number"));
+      let lastDigit =0;
+      let sum =0;
+      let n = num;
+      while(num!=0){
+        lastDigit = num%10;
+        sum = sum * 10 + lastDigit;
+        // num=num/10 ;//O/P : Infinity 
+        num=num/10 | 0;   
+      }
+      document.write("Reverse of number  " + n + " : " + sum);
+</script>
+
+<!-- Feature	JavaScript	Java
+Number type	All numbers are floats (by default)	Has int, float, double, etc.
+/ with numbers	Gives decimal (e.g. 328/10 = 32.8)	If both are int → gives int (328/10 = 32)
+`	0` (bitwise OR with 0)	Truncates decimal, makes it an integer
+Integer division trick
+- | 0 in JavaScript removes the decimal part (acts like integer division), but in Java it does nothing because Java already handles integers directly.
+-->
