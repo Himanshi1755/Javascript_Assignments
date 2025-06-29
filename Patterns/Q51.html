@@ -1,0 +1,23 @@
+<script>
+    let n = parseInt(prompt("Enter a number : "));
+let k;
+    for(let i=0; i<n; i++){
+        k=n-i;
+        for(let j=0; j<n; j++){
+           
+            if(j<i){
+            document.write("&nbsp;&nbsp;");
+            }else{
+                document.write( k);  
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+<!-- 
+   55555
+    4444
+     333
+      22
+       1
+ -->

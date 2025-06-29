@@ -1,0 +1,59 @@
+<script>
+    let n = parseInt(prompt("Enter a number : "));
+    let k ;
+    for(let i=1; i<=n; i++){
+        k=n-i+1;
+        for(let j=0; j<=n; j++){
+           
+            if(j<i){
+            document.write("&nbsp;&nbsp;");
+            }
+            else if(j==n || j<=i || i==1){
+                document.write(k);
+                
+            }
+            else{
+                document.write("_");
+                
+                 
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+<!-- 
+   55555
+    4__4
+     3_3
+      22
+       1
+
+
+       -->
+       <!-- for(let i=1; i<=n; i++){
+        k=n-i+1;
+        for(let j=0; j<=n; j++){
+           
+            if(j<i){
+            document.write("&nbsp;&nbsp;");
+            }
+            else if(j==n || j<=i || i==1){
+                document.write(k);
+                k--;
+            }
+            else{
+                document.write("_");
+                k--;
+                 
+            }
+        }
+        document.write("<br>");
+    } -->
+
+    <!-- 654321
+          5___1
+           4__1
+            3_1
+             21
+              1
+               -->

@@ -1,0 +1,24 @@
+<script>
+    let n = parseInt(prompt("Enter number : "));
+
+for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+        if (j <= n+1-i && j >=n-1+i ){
+            document.write("*");
+        }else {
+            document.write("&nbsp;&nbsp;");
+        }
+    }
+    document.write("<br>");
+}
+</script>
+
+<!-- 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * -->
+
+
+

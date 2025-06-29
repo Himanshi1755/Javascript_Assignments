@@ -1,0 +1,18 @@
+<script>
+    let n = parseInt(prompt("Enter number "));
+    let k;
+    for (let i = 1; i <= n; i++) {
+        if(i%2==0){
+            k=0;
+           }
+           else{
+            k=1;
+           }
+        for (let j = 1; j <= i; j++) {
+            document.write(k + " ");
+           k = 1 - k;
+        }
+
+        document.write("<br>");
+    }
+</script>

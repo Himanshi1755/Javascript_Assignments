@@ -1,0 +1,26 @@
+<script>
+    let n = parseInt(prompt("Enter number "));
+  let k;
+  for (let i = 0; i < n; i++) {
+    k=1;
+      for (let j = 0; j <= i; j++) {
+        k = k=0? 0:1;
+          if (j==0 || j==i || i == n -1){
+           
+              document.write(k + " ");
+             
+          }
+          else{
+              document.write("&nbsp;");
+          }
+      }
+      document.write("<br>");
+  }
+</script>
+
+<!--
+1
+10
+1 1
+1  0
+10101 -->

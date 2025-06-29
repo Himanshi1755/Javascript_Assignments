@@ -1,0 +1,27 @@
+<script>
+    let n = parseInt(prompt("Enter number "));
+  
+    for (let i = 0; i < n; i++) {
+
+        for (let j = 0; j <= i; j++) {
+            let ch = String.fromCharCode(65+j);
+            if (j==0 || j==i || i == n-1 ){
+             
+                document.write(ch);
+            }
+            else{
+                document.write(" &nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+<!-- 
+A
+AB
+A C
+A  D
+ABCDE
+
+
+ -->

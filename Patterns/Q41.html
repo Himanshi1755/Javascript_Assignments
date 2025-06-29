@@ -1,0 +1,21 @@
+<script>
+    let n = parseInt(prompt("Enter number "));
+  let k ;
+  let c =0 ; 
+    for (let i = 0; i < n; i++) {
+        k = 2 * i + 1 ; 
+         for (let j = 1; j <= k; j++) {
+            let ch = String.fromCharCode(65+c);
+                document.write(ch +  " ");
+                c++;
+            }
+        document.write("<br>");
+    }
+</script>
+<!-- 
+
+A
+BCD
+EFGHI
+JKLMNOP
+-->

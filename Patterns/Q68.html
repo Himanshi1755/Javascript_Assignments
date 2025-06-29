@@ -1,0 +1,33 @@
+<script>
+
+
+    let n = parseInt(prompt("Enter number : "));
+    let ch;
+    for (let i = 1; i <= n; i++) {
+        ch = String.fromCharCode(64 + i);
+        for (let j = 1; j < n + i; j++) {
+            if (j == n + 1 - i || j == n - 1 + i || i == n) {
+                document.write(ch);
+
+            }
+            else if (j >= n + 1 - i && j <= n - 1 + i) {
+                document.write("&nbsp;&nbsp;");
+            }
+            else {
+                document.write("&nbsp;&nbsp;");
+            }
+
+        }
+        document.write("<br>");
+    }
+</script>
+
+<!-- 
+      A
+     B B
+    C   C
+   D     D
+  EEEEEEEEE
+
+
+ -->

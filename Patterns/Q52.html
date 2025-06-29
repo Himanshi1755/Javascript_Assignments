@@ -1,0 +1,33 @@
+
+<script>
+    let n = parseInt(prompt("Enter a number : "));
+    let k ,s ;
+    for(let i=1; i<=n; i++){
+       s = 1;
+        for(let j=0; j<=n; j++){
+            k = String.fromCharCode(64+s);
+            if(j<i){
+            document.write("&nbsp;&nbsp;");
+            }
+            else if(j==n || j<=i || i==1){
+                document.write(k);
+                s++;
+                
+            }
+            else{
+                document.write("_");
+                s++;
+               
+                 
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+<!-- 
+   ABCDE
+    A__D
+     A_C
+      AB
+       A
+        -->

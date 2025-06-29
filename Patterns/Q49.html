@@ -1,0 +1,32 @@
+<script>
+    let n = parseInt(prompt("Enter a number "));
+    let k ;
+    for (let i = 1; i <= n; i++) {
+        k=  0;
+        for (let j = 1; j <= n; j++) {
+            k = k>0 ? 0 : 1;
+         
+            if (j <= n - i) {
+        
+                document.write("&nbsp;&nbsp;");
+                k=0;
+            }
+            else {
+                document.write(k);
+               
+                // k--;
+ 
+            }
+
+        }
+        document.write("<br>");
+    }
+</script>
+
+<!--s
+    1
+   10
+  101
+ 1010
+10101
+ -->

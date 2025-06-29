@@ -1,0 +1,31 @@
+<script>
+
+
+    let n = parseInt(prompt("Enter number : "));
+    for (let i = 1; i <= n; i++) {
+
+        for (let j = 1; j < n + i; j++) {
+            if (j == n + 1 - i || j == n - 1 + i || i == n) {
+                document.write("1");
+
+            }
+            else if (j >= n + 1 - i && j <= n - 1 + i) {
+                document.write("*");
+            }
+            else {
+                document.write("&nbsp;&nbsp;");
+            }
+
+        }
+        document.write("<br>");
+    }
+</script>
+
+<!-- 
+     1
+    1_1
+   1___1 
+  1_____1 
+ 111111111
+
+ -->

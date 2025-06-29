@@ -1,0 +1,27 @@
+<script>
+    let n = parseInt(prompt("Enter number "));
+  let k =0;
+    for (let i = 0; i < n; i++) {
+        
+        for (let j = 0; j <= i; j++) {
+            let ch = String.fromCharCode(97+k); 
+            if (j==0 || j==i || i == n-1 ){
+                document.write(ch);
+                k++;
+            }
+            else{
+                document.write(" &nbsp");
+                k++;
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+<!-- 
+a
+bc
+d f
+g  j
+klmno
+
+ -->
